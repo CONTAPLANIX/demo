@@ -1,4 +1,4 @@
-var CACHE_NAME = "demo-v1";
+var CACHE_NAME = "demo-v2";
 var PRECACHE_URLS = [
   "./",
   "./index.html",

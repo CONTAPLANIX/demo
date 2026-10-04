@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-<title>Demo Notas de Venta</title>
-<meta name="description" content="Demo: notas de venta para tu negocio">
+<title>JEED PAY · Demo</title>
+<meta name="description" content="JEED PAY: notas de venta, deudores e impresion para tu negocio">
 <meta name="theme-color" content="#f76204">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Demo Ventas">
+<meta name="apple-mobile-web-app-title" content="JEED PAY">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -478,7 +478,7 @@
     return sinRedondeo ? crudo : redondear10(crudo);
   }
   var MONEDA_NOMBRE = "SOLES";
-  var APP_VERSION = "3 oct · D1";
+  var APP_VERSION = "3 oct · D2";
   // Mensaje del pie en lineas centradas: "Gracias por su Compra" / "¡Hasta la próxima entrega!"
   function pieLineas(){
     var t = String(state.negocio.pie || "Gracias por su Compra. ¡Hasta la próxima entrega!");
@@ -1416,6 +1416,7 @@
           }).join("") + '</div>'
         + '<div class="pin-error" id="gate-error">'+escapeHtml(ui.gateError)+'</div>'
         + '<button class="btn btn-sm" data-action="gate-escribir">Mi nombre no aparece</button>'
+        + '<div style="margin-top:18px;display:flex;align-items:center;gap:8px;justify-content:center;color:var(--ink-soft);font-size:12.5px;"><img src="assets/jeedpay.png" alt="JEED PAY" style="width:28px;height:28px;border-radius:7px;"> Sistema <strong style="color:var(--ink);">JEED PAY</strong> · versión de demostración</div>'
         + '</div>';
       return;
     }
